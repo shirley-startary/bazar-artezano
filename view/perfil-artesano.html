@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>perfil-artesano</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <div class="row">
      <div class="col s12">
        <ul class="tabs">
-         <li class="tab col s3"><a class="active" href="#pedidos">Pedidos</a></li>
-         <li class="tab col s3"><a href="#subir-producto">Subir producto</a></li>
+         <li class="tab col s3"><a href="#pedidos">Pedidos</a></li>
+         <li class="tab col s3"><a  href="#subir-producto">Subir producto</a></li>
          <li class="tab col s3"><a href="#catalogo">Mi catalogo</a></li>
-         <li class="tab col s3"><a href="#proceso-de-DA">Consulta tu Proceso (Derecho de Autor) </a></li>
+         <li class="tab col s3"><a class="active" href="#proceso-de-DA">Consulta tu Proceso (Derecho de Autor) </a></li>
        </ul>
      </div>
      <div id="pedidos" class="col s12">
@@ -90,15 +91,116 @@
       si decide que sea con derecho de autor que haya un proceso con el despacho de abogados, si no que sea subido al  catalogo general-->
      <div id="subir-producto" class="col s12">
        <!-- debe ir un formulario donde pueda el artesano subir su producto -->
-       
+       <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <img id="imgSalida" width="50%" height="50%" src="" /><br />
+              <!--  -->
+              <input type="file" id="file-input" style="display: none;" />
+              <button class="btn" type="button" value="Browse..." onclick="document.getElementById('file-input').click();">Subir Imagen</button>
+            </div>
+            <div class="input-field col m6 s12">
+                <select id="derecho-autor">
+                  <option value="" disabled selected>Seleccione una opcion</option>
+                  <option value="1">Subir directo</option>
+                  <option value="2">Tramitar Derecho de autor</option>
+                </select>
+                <label for="derecho-autor">Seleccione la opcion deseada</label>
+              </div>
+            <div class="input-field col s12">
+              <input placeholder="Ingrese el Nombre del producto" id="Nombre-producto" type="text" class="validate">
+              <label for="Nombre-producto">Nombre del Producto</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea placeholder="Ingrese aqui la descripcion de su pruducto" id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Descripcion del producto</label>
+            </div>
+          </div>
+          <ul id="requisitos" class="collapsible" data-collapsible="accordion" >
+            <li>Requisitos</li>
+            <li>
+              <div class="collapsible-header">
+                <input type="checkbox" id="req1"/>
+                <label for="req1"></label>Requisito 1</div>
+              <div class="collapsible-body">
+                <span>Aqui debe ir la especificacion de donde conseguir el requisito</span>
+                <input type="file" value="Ingrese el archivo">
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <input type="checkbox" id="req2"/>
+                <label for="req2"></label>Requisito 2</div>
+              <div class="collapsible-body">
+                <span>Aqui debe ir la especificacion de donde conseguir el requisito</span>
+                <input type="file" value="Ingrese el archivo">
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <input type="checkbox" id="req3"/>
+                <label for="req3"></label>Requisito 3</div>
+              <div class="collapsible-body">
+                <span>Aqui debe ir la especificacion de donde conseguir el requisito</span>
+                <input type="file" value="Ingrese el archivo">
+              </div>
+            </li>
+          </ul>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+
      </div>
      <div id="proceso-de-DA" class="col s12">
-
+       <table>
+        <thead>
+          <tr>
+              <th>Producto</th>
+              <th>Fecha de tramite</th>
+              <th>Status del tramite</th>
+              <th>fecha de aprobacion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-11-2017</td>
+            <td>
+              <div class="circulo-red"></div>
+            </td>
+            <td>Aun sin aprobar</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-11-2017</td>
+            <td>
+              <div class="circulo-yellow"></div>
+            </td>
+            <td>En proceso</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
+        </tbody>
+      </table>
      </div>
    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/perfil-artesano.js">
+
+    </script>
   </body>
 </html>

@@ -1,0 +1,16 @@
+.circulo-green, .circulo-red, .circulo-yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+.circulo-green {
+  background: green;
+}
+
+.circulo-red {
+  background: red;
+}
+
+.circulo-yellow {
+  background: yellow;
+}
