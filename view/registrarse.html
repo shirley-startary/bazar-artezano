@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+	  <script type "text/javascript" src="../js/registrarse.js"></script>
+
+	    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</head>
+<div class="navbar-fixed">
+  <nav>
+      <div class="nav-wrapper  cyan darken-4">
+        <a href="/home.html" class="brand-logo">Bazar Artesano</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="/home.html">Inicio</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Catálogo artesanías<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="perfil-artesano.html">Registro</a></li>
+          <li><a href="perfil-artesano.html"	>Mi cuenta</a></li>
+          <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">search</i></a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li class="active"><a href="/home.html">Inicio</a></li>
+          <li><a href="perfil-artesano.html">Registro</a></li>
+          <li><a href="perfil-artesano.html">Mi cuenta</a></li>
+          <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">search</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="view/barro.html">Barro</a></li>
+  <li><a href="#!">Arcilla</a></li>
+  <li><a href="#!">Shakira</a></li>
+  <li><a href="barro.html">Palma</a></li>
+  <li><a href="#!">Artes decorativas</a></li>
+  <li><a href="#!">Bordado</a></li>
+  <li><a href="barro.html">Orfebrería</a></li>
+  <li><a href="#!">Vidrio soplado</a></li>
+  <li><a href="#!">Tallado de madera</a></li>
+</ul>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-title">
+			<h2 class="Header">Registro</h2>
+			<div>
+			<form class="card-panel hoverable" action="#">
+				<table>
+					<tr>
+						<td>
+							<div class="file-field input-field">
+							  <div class="btn">
+								<span>Foto</span>
+								<input id="idRFoto" type="file">
+							  </div>
+							  <div class="file-path-wrapper">
+								<input class="file-path validate" type="text">
+							  </div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-field col s6">
+								<label for="idRNombre" name="nombre">Nombre</label><input id="idRNombre" type="text"/>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div class="input-field col s6">
+								<label for="idRApellidos" name="apellidos">Apellidos</label><input id="idRApellidos" type="text"/>
+							 <div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div class="input-field col s6">
+								<label for="idRCorreo" name="correo">Correo</label><input id="idRCorreo" type="text"/>
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div class="input-field col s6">
+								<label for="idRContraseña" name="contraseña">Contraseña</label><input id="idRContraseña" type="password"/>
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div class="input-field col s6">
+								<label for="idRConfCont" name="confCont">Confirmar contraseña</label><input id="idRConfCont" type="password"/>
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-field col s6">
+								<textarea id="idRDireccion" class="materialize-textarea"></textarea>
+								<label for="idRDireccion">Dirección</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-field col s6">
+								<label name="telefono">Telefono</label><input id="idRTelefono" type="text" />
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-field col s6">
+								<select id="idRTipUsr">
+								  <option value="" disabled selected>Escoge tu tipo de usuario</option>
+								  <option value="artesano">Artesano</option>
+								  <option value="usuario">Usuario</option>
+								</select>
+							<label>Tipo de usuario</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div id="dvComunidad" class="input-field col s6">
+								<label name="comunidad">Comunidad</label><input id="idRComunidad" type="text" />
+							 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						 <div id="dvTipArt" class="input-field col s6">
+							<select id="idRTipArt">
+							  <option value="" disabled selected>Escoge tu tipo de artesania</option>
+							  <option value="madera">Madera</option>
+							  <option value="tela">Tela</option>
+							  <option value="barro">Barro</option>
+							</select>
+							<label>Tipo de artesano</label>
+						 </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 <div id="dvMarca" class="input-field col s6">
+								<label name="marca">Nombre de marca</label><input id="idRMarca" type="text" />
+							 </div>
+						</td>
+					</tr>
+				</table>
+				  <a class="waves-effect waves-light btn" id="idSubRegistrar">Resistrarse</a>
+				  <span></span>
+				  <a class="waves-effect waves-light btn" id="idBtnCancelar">Cancelar</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -7,15 +7,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper  cyan darken-4">
+          <a href="/home.html" class="brand-logo">Bazar Artesano</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="../home.html">Inicio</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Catálogo artesanías<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="">Registro</a></li>
+            <li><a href="">Mi cuenta</a></li>
+            <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">search</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="active"><a href="/home.html">Inicio</a></li>
+            <li><a href="">Registro</a></li>
+            <li><a href="perfil-artesano.html">Mi cuenta</a></li>
+            <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">search</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="barro.html">Barro</a></li>
+      <li><a href="#!">Arcilla</a></li>
+      <li><a href="#!">Shakira</a></li>
+      <li><a href="barro.html">Palma</a></li>
+      <li><a href="#!">Artes decorativas</a></li>
+      <li><a href="#!">Bordado</a></li>
+      <li><a href="barro.html">Orfebrería</a></li>
+      <li><a href="#!">Vidrio soplado</a></li>
+      <li><a href="#!">Tallado de madera</a></li>
+    </ul>
     <div class="row">
      <div class="col s12">
        <ul class="tabs">
-         <li class="tab col s3"><a href="#pedidos">Pedidos</a></li>
+         <li class="tab col s3"><a class="active" href="#pedidos">Pedidos</a></li>
          <li class="tab col s3"><a  href="#subir-producto">Subir producto</a></li>
          <li class="tab col s3"><a href="#catalogo">Mi catalogo</a></li>
-         <li class="tab col s3"><a class="active" href="#proceso-de-DA">Consulta tu Proceso (Derecho de Autor) </a></li>
+         <li class="tab col s3"><a href="#proceso-de-DA">Consulta tu Proceso (Derecho de Autor) </a></li>
        </ul>
      </div>
      <div id="pedidos" class="col s12">
@@ -191,10 +227,57 @@
             </td>
             <td>12-11-2017</td>
           </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
+          <tr>
+            <td>Jarron de Madera</td>
+            <td>12-10-2017</td>
+            <td>
+              <div class="circulo-green"></div>
+            </td>
+            <td>12-11-2017</td>
+          </tr>
         </tbody>
       </table>
      </div>
    </div>
+   <!-- <footer class="page-footer cyan darken-4">
+      <div class="footer-copyright">
+        <div class="container center-align">
+        © 2017 Bazar Artesano
+        </div>
+      </div>
+    </footer> -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

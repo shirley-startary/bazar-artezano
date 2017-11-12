@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patentes</title>
+	 <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+	<div class="navbar-fixed">
+		<nav>
+		    <div class="nav-wrapper  cyan darken-4">
+		      <a href="../home.html" class="brand-logo">Bazar Artesano</a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+		        <li class="active"><a href="../home.html">Inicio</a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Catálogo artesanías<i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a href="">Registro</a></li>
+		        <li><a href="perfil-artesano.html">Mi cuenta</a></li>
+		        <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">search</i></a></li>
+		      </ul>
+		      <ul class="side-nav" id="mobile-demo">
+		        <li class="active"><a href="/home.html">Inicio</a></li>
+		        <li><a href="">Registro</a></li>
+		        <li><a href="">Mi cuenta</a></li>
+		        <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">search</i></a></li>
+		      </ul>
+		    </div>
+  		</nav>
+  	</div>
+
+  	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="barro.html">Barro</a></li>
+	  <li><a href="#!">Arcilla</a></li>
+	  <li><a href="#!">Shakira</a></li>
+	  <li><a href="barro.html">Palma</a></li>
+	  <li><a href="#!">Artes decorativas</a></li>
+	  <li><a href="#!">Bordado</a></li>
+	  <li><a href="barro.html">Orfebrería</a></li>
+	  <li><a href="#!">Vidrio soplado</a></li>
+	  <li><a href="#!">Tallado de madera</a></li>
+	</ul>
+
+  	<div class="container">
+  		<div class="row">
+	  		<div class="col s12">
+	  			<h1 class="center-align">Jarrón de barro</h1>
+	  		</div>
+
+	  		<div class="product">
+			  	<div class="product--body">
+				  	<div class="product--image">
+				    	<div class="row">
+				    		<div class="col s12 m2">
+				    			<div class="icon-images">
+									<img src="http://mexicania.com.mx/mt-content/uploads/2017/08/barro.jpg" style="width:100%;" />
+						      		<img src="https://static4.depositphotos.com/1018414/374/i/950/depositphotos_3743923-stock-photo-potter-creates-a-pitcher-on.jpg" style="width:100%;" />
+						      		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMTa_dut9Zw40ndBfdThW7BXWVJfwSIiV56uj5dRuCbw4MDLn3Q" style="width:100%;" />
+						    	</div>
+				    		</div>
+				    		<div class="col s12 m6">
+				    			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMTa_dut9Zw40ndBfdThW7BXWVJfwSIiV56uj5dRuCbw4MDLn3Q" class="display-img" style="width:100%;">
+				    		</div>
+				    		<div class="col s12 m4">
+				    			<h2>Jarrón de barro</h2>
+				    			<p>Elabrado a mano por artesanos mexicanos con materiales extraídos de sin dañar a la naturaleza. </p>
+				    			<div class="input-field col s12">
+								    <select>
+								      <option value="" disabled selected>Número de piezas</option>
+								      <option value="1">1</option>
+								      <option value="2">2</option>
+								      <option value="3">3</option>
+								      <option value="1">4</option>
+								      <option value="2">5</option>
+								      <option value="3">6</option>
+								      <option value="1">7</option>
+								      <option value="2">8</option>
+								      <option value="3">9</option>
+								      <option value="3">10</option>
+								    </select>
+								    <label>Escoge el número de piezas</label>
+								</div>
+								<a class="waves-effect waves-green white-text btn" href="#">Comprar <i class="material-icons right">keyboard_arrow_right</i></a>
+				    		</div>
+				    	</div>
+				  	</div>
+			  	</div>
+			</div>
+
+
+
+	  	</div>
+  	</div>
+
+  	<footer class="page-footer cyan darken-4">
+      <div class="footer-copyright">
+        <div class="container center-align">
+        © 2017 Bazar Artesano
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript">
+    	$( document ).ready(function(){
+    		$(".button-collapse").sideNav();
+    		$(".dropdown-button").dropdown();
+    	})
+    	 $(document).ready(function() {
+		    $('select').material_select();
+		  });
+    </script>
+    <script type="text/javascript">
+		var sizes = jQuery(".product--size").find("span");
+		sizes.click(function() {
+		  sizes.removeClass("active");
+		  $(this).addClass("active");
+		});
+
+		// Change image on thumbnail click.
+		var thumbs = $(".icon-images").find("img");
+		thumbs.click(function() {
+		  var src = $(this).attr("src");
+		  var dp = $(".display-img");
+		  dp.attr("src", src);
+		});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.activator {
+	width: 100%;
+	height: 250px;
+}
+.card-content a, h1 {
+	color: #006064;
+	font-weight: 600;
+}
+.card-content a:hover {
+	color: #0097a7;
+	transition: color .6s;
+}

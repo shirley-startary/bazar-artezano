@@ -1,18 +1,14 @@
 $(window).on("load",function(){
 
  $(function() {
+  $(".button-collapse").sideNav();
+  $(".dropdown-button").dropdown();
   $('select').material_select();
   $('#requisitos').hide();
   $('#derecho-autor').change(mostrarRequisitos)
   $('#file-input').change(function(e) {
       addImage(e);
   });
-
-  function checarInputRequisitos () {
-    
-  }
-
-
 
   function mostrarRequisitos() {
     var derecho = $('#derecho-autor').val();

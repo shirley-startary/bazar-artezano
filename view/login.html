@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+	  <script type "text/javascript" src="login.js"></script>
+	  
+	  <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+          
+</head>
+<body>
+	<a class="waves-effect waves-light btn modal-trigger" href="#modalLogin">Modal</a>
+	
+	<div id="modalLogin" class="modal">
+    <div class="modal-content">
+      <h4>Iniciar sesión</h4>
+      <p>Introduce tus datos de acceso</p>
+	  
+	  <div class="row input-field">
+		<i class="material-icons prefix">account_circle</i><input id="idUsr"  type="text" /><label for="idUsr">Usuario</label>
+	  </div>
+	  <div class="row input-field">
+		<i class="material-icons prefix">vpn_key</i><input id="idPass" type="password" /><label for="idPass">Constraseña</label>
+	  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="btnMAceptar" class="waves-effect waves-light btn">Aceptar</a>
+	  <a href="#!" id="btnMCancelar" class="waves-effect waves-light btn">Cancelar</a>
+	  <div>
+		<a href="#!">Recuperar contraseña</a>
+	  </div>
+    </div>
+  </div>
+</body>
+</html>

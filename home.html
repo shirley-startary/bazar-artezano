@@ -1,10 +1,310 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>bazar-arte-sano</title>
-  </head>
-  <body>
+<head>
+	<title>Patentes</title>
+	 <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 
-  </body>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+	<div class="navbar-fixed">
+		<nav>
+		    <div class="nav-wrapper  cyan darken-4">
+		      <a href="/home.html" class="brand-logo">Bazar Artesano</a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+		        <li class="active"><a href="/home.html">Inicio</a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Catálogo artesanías<i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a href="view/registrarse.html">Registro</a></li>
+		        <li><a href="view/perfil-artesano.html">Mi cuenta</a></li>
+		        <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">search</i></a></li>
+		      </ul>
+		      <ul class="side-nav" id="mobile-demo">
+		        <li class="active"><a href="/home.html">Inicio</a></li>
+		        <li><a href="view/registrarse.html">Registro</a></li>
+		        <li><a href="view/perfil-artesano.html">Iniciar sesión</a></li>
+		        <li><a href=""><i class="material-icons">add_shopping_cart</i></a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">search</i></a></li>
+		      </ul>
+		    </div>
+  		</nav>
+  	</div>
+
+  	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="view/barro.html">Barro</a></li>
+	  <li><a href="#!">Arcilla</a></li>
+	  <li><a href="#!">Shakira</a></li>
+	  <li><a href="barro.html">Palma</a></li>
+	  <li><a href="#!">Artes decorativas</a></li>
+	  <li><a href="#!">Bordado</a></li>
+	  <li><a href="barro.html">Orfebrería</a></li>
+	  <li><a href="#!">Vidrio soplado</a></li>
+	  <li><a href="#!">Tallado de madera</a></li>
+	</ul>
+
+		<!--  Modal-->
+		<div id="modalLogin" class="modal">
+			<div class="modal-content">
+				<h4>Iniciar sesión</h4>
+				<p>Introduce tus datos de acceso</p>
+
+			<div class="row input-field">
+			<i class="material-icons prefix">account_circle</i><input id="idUsr"  type="text" /><label for="idUsr">Usuario</label>
+			</div>
+			<div class="row input-field">
+			<i class="material-icons prefix">vpn_key</i><input id="idPass" type="password" /><label for="idPass">Constraseña</label>
+			</div>
+			</div>
+			<div class="modal-footer">
+				<a href="view/perfil-artesano.html" id="btnMAceptar" class="waves-effect waves-light btn">Aceptar</a>
+			<a href="#!" id="btnMCancelar" class="waves-effect waves-light btn">Cancelar</a>
+			<div>
+			<a href="#!">Recuperar contraseña</a>
+			</div>
+			</div>
+		</div>
+
+  	<div id="player"></div>
+
+  	<div class="container">
+  		<div class="row">
+	  		<div class="col s12">
+	  			<h1 class="center-align">Catálogo de Artesanías</h1>
+	  		</div>
+
+	  		<div class="row">
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://www.zocalo.com.mx/images/sized/images/uploads/articles/artesaniamexicana-621x354.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Barro<i class="material-icons right">more_vert</i></span>
+					      <p><a href="view/barro.html">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Barro<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Barro_Pintado_en_Margarita.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Arcilla<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Arcilla<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://s1.significados.com/foto/shutterstock-513513718_bg.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Shakira<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Shakira<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="row">
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://pueblados22.mx/wp-content/uploads/2016/09/1024px-Nacajuca.Artesan%C3%ADas_de_palma-e1474321206394.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Palma<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Palma<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://lugarcia4.files.wordpress.com/2013/02/artesania_g01.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Artes decorativas<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Artes decorativas<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://2.bp.blogspot.com/-bafKAJ0JBqM/U7wXeaks0jI/AAAAAAAAA3I/VS25Ba1Ov30/s1600/artesanato-acre.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Bordado<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Bordado<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="row">
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="https://megalopolismx.com/images/noticias/201609/orfebreria-arte-milenario-que-se-ha-resistido-a-la-tecnologia.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Ofebrería<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Ofebrería<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://news.momondo.com/wp-content/uploads/2016/07/Vidrio-Soplado.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Vidrio soplado<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Vidrio soplado<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+
+	  			<div class="col s12 m4">
+	  				<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="http://artesaniascaballodetroya.com/images/stories/virtuemart/product/Tallas%20de%20madera.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Tallado de madera<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">Ver más</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Talla de madera<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					</div>
+	  			</div>
+	  		</div>
+
+
+	  	</div>
+  	</div>
+
+  	<footer class="page-footer cyan darken-4">
+      <div class="footer-copyright">
+        <div class="container center-align">
+        © 2017 Bazar Artesano
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+    	$( document ).ready(function(){
+    		$(".button-collapse").sideNav();
+    		$(".dropdown-button").dropdown();
+    	})
+    </script>
+
+    <script>
+    // 1. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+              // 2. This code loads the IFrame Player API code asynchronously.
+              var player;
+
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player("player", {
+            height: "500",
+            width: "100%",
+            playerVars: {
+              controls: 0,
+              modestbranding: 0,
+              showinfo: 0
+            },
+            events: {
+              onReady: onPlayerReady,
+              onStateChange: onPlayerStateChange
+            }
+          });
+        }
+
+
+        // 3. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+          player.loadVideoById({
+            'videoId': 'a96K4Cd4Y8s',
+            'startSeconds': 7,
+            'endSeconds': 60
+          });
+          player.playVideo();
+          player.mute();
+        }
+
+        //4. The API will call this function when there is state change in video
+        function onPlayerStateChange(event) {
+          if (player.getPlayerState() === 0) {
+            player.seekTo(3, true);
+          }
+          if (event.data == YT.PlayerState.PLAYING) {
+            ('player').classList.add('fade_in');
+          }
+        }
+    </script>
+		<script type="text/javascript" src="js/login.js">
+
+		</script>
+</body>
 </html>
