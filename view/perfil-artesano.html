@@ -2,10 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>perfil-artesano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div class="row">
+     <div class="col s12">
+       <ul class="tabs">
+         <li class="tab col s3"><a class="active" href="#pedidos">Pedidos</a></li>
+         <li class="tab col s3"><a href="#subir-producto">Subir producto</a></li>
+         <li class="tab col s3"><a href="#catalogo">Mi catalogo</a></li>
+         <li class="tab col s3"><a href="#proceso-de-DA">Consulta tu Proceso (Derecho de Autor) </a></li>
+       </ul>
+     </div>
+     <div id="pedidos" class="col s12">
+       <table>
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Direccion</th>
+              <th>Producto</th>
+              <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Silvana</td>
+            <td>Ciudad de México</td>
+            <td>Aqui vendria el nombre del producto pedido</td>
+            <td>$300.00</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Michoacan</td>
+            <td>Aqui vendria el nombre del producto pedido </td>
+            <td>$400.00</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>EE.UU.</td>
+            <td>Aqui vendria el nombre del producto pedido</td>
+            <td>$500.00</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+     <!--  seccion de sus catalogos, donde puede modificar sus productos el artesano-->
+     <div id="catalogo" class="col s12">
+       <h2>Mi catalogo de productos</h2>
+       <div class="col s12 m6">
+         <div class="card horizontal">
+           <div class="card-image">
+             <img src="http://cdmxtravel.com/assets/cache/27b220fb2f9535bf062956cae477643c/discover-4398-cimg8462_848x476_adaptiveResize.jpg">
+           </div>
+           <div class="card-stacked">
+             <div class="card-content">
+               <h4 class="header">Nombre de la artesania</h4>
+               <p>Aqui vendria una descripcion del producto</p>
+             </div>
+             <div class="card-action">
+               <a href="#">Modificar producto</a>
+             </div>
+           </div>
+         </div>
+       </div>
 
+       <div class="col s12 m6">
+         <div class="card horizontal">
+           <div class="card-image">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Artesan%C3%ADas_de_Puebla.JPG/1024px-Artesan%C3%ADas_de_Puebla.JPG">
+           </div>
+           <div class="card-stacked">
+             <div class="card-content">
+               <h4 class="header">Nombre de la artesania</h4>
+               <p>Aqui vendria una descripcion del producto</p>
+             </div>
+             <div class="card-action">
+               <a href="#">Modificar producto</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- seccion en donde el artesano puede subir su producto, y sea guardado en la base de datos
+      si decide que sea con derecho de autor que haya un proceso con el despacho de abogados, si no que sea subido al  catalogo general-->
+     <div id="subir-producto" class="col s12">
+       <!-- debe ir un formulario donde pueda el artesano subir su producto -->
+       
+     </div>
+     <div id="proceso-de-DA" class="col s12">
+
+     </div>
+   </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
